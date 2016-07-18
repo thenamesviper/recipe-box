@@ -22,4 +22,8 @@ export class RecipePreviewComponent implements OnInit {
         this.steps = this.recipe.steps;
         this.time = this.recipe.time;
     }
+
+    sayHi() {
+        console.log("hello, there")
+    }
 }

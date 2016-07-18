@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+import { IRecipe } from "./recipe";
 import { RecipeService } from "./recipes.service";
 import { RecipePreviewComponent } from "./recipe-preview/recipe-preview.component"
 
@@ -13,20 +14,13 @@ import { RecipePreviewComponent } from "./recipe-preview/recipe-preview.componen
 })
 export class RecipeBoxAppComponent implements OnInit {
   title = 'Hello, World';
- 
-  myRecipe = {
-    name: "Lasagna Alfredo",
-    ingredients: ['Meat'],
-    steps: ['1.who cares'],
-    time: ['20 min.', '2 hrs']
-  }
-
+  recipes: IRecipe[];
   constructor(private _recipeService: RecipeService) {
-    
+
   }
 
   ngOnInit(): void {
-    
+    this.recipes = this._recipeService.getRecipes();
     // console.log(this._recipeService.getRecipes())
   }
 }

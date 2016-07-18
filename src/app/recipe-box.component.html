@@ -1,34 +1,9 @@
 <div id = "header">I am a header</div>
 
 <div id = "container">
-  <div class = "rec">
+  <div *ngFor = "let recipe of recipes" class = "rec">
     <recipe-preview-app
-        [recipe] = "myRecipe"
-        ></recipe-preview-app>
-  </div>
-  <div class = "rec">
-    <recipe-preview-app
-        [recipe] = "myRecipe"
-        ></recipe-preview-app>
-  </div>
-  <div class = "rec">
-    <recipe-preview-app
-        [recipe] = "myRecipe"
-        ></recipe-preview-app>
-  </div>
-  <div class = "rec">
-    <recipe-preview-app
-        [recipe] = "myRecipe"
-        ></recipe-preview-app>
-  </div>
-  <div class = "rec">
-    <recipe-preview-app
-        [recipe] = "myRecipe"
-        ></recipe-preview-app>
-  </div>
-  <div class = "rec">
-    <recipe-preview-app
-        [recipe] = "myRecipe"
+        [recipe] = "recipe"
         ></recipe-preview-app>
   </div>
 </div>

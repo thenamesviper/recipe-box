@@ -3,7 +3,8 @@ import { IRecipe } from "./recipe"
 
 @Injectable()
 export class RecipeService {
+    recipes = JSON.parse(localStorage.getItem("thenamesviper_recipe-box_recipes"));
     getRecipes(): Array<IRecipe> {
-        return localStorage.getItem("recipes");
+        return this.recipes;
     }
 }
