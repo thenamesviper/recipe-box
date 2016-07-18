@@ -15,10 +15,10 @@ export class RecipeBoxAppComponent implements OnInit {
   title = 'Hello, World';
  
   myRecipe = {
-    name: "me",
-    ingredients: ['hh'],
-    steps: ['3'],
-    time: ['2', '2']
+    name: "Lasagna Alfredo",
+    ingredients: ['Meat'],
+    steps: ['1.who cares'],
+    time: ['20 min.', '2 hrs']
   }
 
   constructor(private _recipeService: RecipeService) {

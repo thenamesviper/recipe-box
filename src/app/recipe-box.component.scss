@@ -1,0 +1,19 @@
+@import "./shared/variables";
+
+#container {
+    width: 75%;
+    margin: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: lighten($baseColor, 30%);
+
+}
+
+.rec {
+    width: 30%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    margin-top: 15px;
+
+    display: inline-block;
+}
