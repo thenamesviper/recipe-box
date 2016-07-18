@@ -1,0 +1,35 @@
+@import "../shared/variables";
+
+.recipe-preview {
+    display: block;
+    background-color: $recipeColor;
+
+    width: 25%;
+    height: 250px;
+    margin-left: 250px;
+    
+
+    h1 {
+        text-align: center;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+    ul li {
+        float:left;
+        height: 4em;
+        width: 25%;
+        text-align: center;
+        line-height: 4em;
+    }
+
+    li p{
+        line-height: 2em;
+    }
+    li span {
+        line-height: 2em;
+    }
+
+    overflow: hidden;
+}

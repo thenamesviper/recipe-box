@@ -6,6 +6,8 @@
   <base href="/">
   {{content-for 'head'}}
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel = "stylesheet" href = "reset.css">
+  <link rel = "stylesheet" href = "loading.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Service worker support is disabled by default.
@@ -21,7 +23,14 @@
   -->
 </head>
 <body>
-  <recipe-box-app>Loading...</recipe-box-app>
+  <recipe-box-app>
+    <div id = "rotate">
+    <div class = "block"></div>
+    <div class = "block"></div>
+    <div class = "block"></div>
+    <div class = "block"></div>
+</div>
+</recipe-box-app>
 
   <script src="vendor/es6-shim/es6-shim.js"></script>
   <script src="vendor/reflect-metadata/Reflect.js"></script>
